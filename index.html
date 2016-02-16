@@ -11,10 +11,6 @@
     <body>
         <h1>{Title}</h1>
 
-        {block:Description}
-            <p id="description">{Description}</p>
-        {/block:Description}
-
         <ol id="posts">
             {block:Posts}{block:Text}
                     <li class="post text">
@@ -82,13 +78,7 @@
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
                     </li>
-                {/block:Video}{block:Audio}
-                    <li class="post audio">
-                        {AudioEmbed}{block:Caption}
-                            <div class="caption">{Caption}</div>
-                        {/block:Caption}
-                    </li>
-                {/block:Audio}{/block:Posts}
+                {/block:Video}{/block:Posts}
         </ol>
 
         <p id="footer">
